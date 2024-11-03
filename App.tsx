@@ -3,14 +3,14 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 export default function App() {
   const [display, setDisplay] = useState('');
-  const [clickedButton, setClickedButton] = useState(null);
+  const [clickedButton, setClickedButton] = useState<string | null>(null);
   const [operation, setOperation] = useState('');
 
-  const handlePress = (value) => {
+  const handlePress = (value: string) => {
     if (value === '=') {
       try {
         const result = eval(display);
-        const fullOperation = display /* + '=' + result */;
+        const fullOperation = display;
         setDisplay(result.toString());
         setOperation(fullOperation);
       } catch (error) {
@@ -31,7 +31,7 @@ export default function App() {
         setOperation('');
       }
     } else if (value === 'sup') {
-      const newDisplay = display.slice(0, -1); // Supprimer le dernier caractère
+      const newDisplay = display.slice(0, -1);
       setDisplay(newDisplay);
       setOperation(newDisplay);
     } else {

@@ -25,6 +25,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f446b239-e3a6-482f-a9b8-b9c83f7b6707"
+      }
+    },
+    "owner": "fberry",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f446b239-e3a6-482f-a9b8-b9c83f7b6707"
     }
   }
 }
