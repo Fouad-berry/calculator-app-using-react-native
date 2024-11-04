@@ -149,7 +149,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 15,
   },
-  // Rest of the styles...
   button: {
     backgroundColor: '#25313D',
     width: 68,
