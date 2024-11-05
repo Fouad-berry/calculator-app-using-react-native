@@ -61,7 +61,7 @@ export default function App() {
         <TouchableOpacity style={styles.buttondiv} onPress={() => handlePress('/')}>
           <Text style={styles.buttonText}>/</Text>
         </TouchableOpacity>
-        {/* Ajoutez les autres boutons de la calculatrice ici */}
+        {/* Ajoutez tout les autres boutons de la calculatrice ici */}
         <TouchableOpacity style={styles.button} onPress={() => handlePress('7')}>
           <Text style={styles.buttonText}>7</Text>
         </TouchableOpacity>
